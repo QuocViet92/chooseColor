@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 20px;
+}
+option {
+}
+button,
+select {
+  border: 1px solid #d1d5db;
+  box-shadow: 0px 1px 2px 0px #0000000d;
+  outline: none;
+  border-radius: 4px;
+}
+select {
+  width: 312px;
+  height: 42px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+button {
+  width: 123px;
+  height: 42px;
+  background-color: white;
+  cursor:pointer
+}
+button:active{
+  background-color: #FEEECD;
+}
+input {
+  width: 61px;
+  height: 42px;
+}
+.colors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 650px;
+  text-align: center;
+}
+.color {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.copyColor {
+  padding: 10px 40px;
+  border: 1px solid rgb(61, 56, 56);
+  color: white;
+  background-color: rgb(193, 161, 161);
+  opacity: 80%;
+  border-radius: 4px;
+  display: none;
+  position: absolute;
+}
+.infoColor{
+  align-self: flex-end;
+  background-color: white;
+  width: 100%;
+}
