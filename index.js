@@ -22,7 +22,7 @@ function render() {
     let htmlColors = arr.colors.map(item => {
         return  `<div class="color" style="background-color: ${item.hex.value}" data-hex=${item.hex.value}>
         <h4 class="copyColor" id=${item.hex.value}>Copy</h4>
-        <div class='infoColor'><h4 data-hex=${item.hex.value}>${item.hex.value}</h4></div>
+        <div class='infoColor' data-hex=${item.hex.value}><h4 data-hex=${item.hex.value}>${item.hex.value}</h4></div>
         
 </div>`
     }).join('')

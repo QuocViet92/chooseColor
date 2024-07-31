@@ -1,12 +1,28 @@
 body {
   margin: 0;
   box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.title{
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+            -webkit-background-clip: text;
+            color: transparent;
 }
 header {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 10px 20px;
+}
+main{
+  flex-grow: 1;
 }
 option {
 }
@@ -61,6 +77,23 @@ input {
 }
 .infoColor{
   align-self: flex-end;
-  background-color: white;
   width: 100%;
+  background-color: white;
+}
+
+@media(max-width:768px){
+  .colors{
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+   height: 100%;
+  }
+  .infoColor{
+   background-color: inherit;
+  }
+  .infoColor h4{
+    background-color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
 }
